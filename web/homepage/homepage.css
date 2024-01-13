@@ -1,0 +1,86 @@
+/* @font-face {
+    font-family: gotham rounded;
+    src:local(D:\Apartment-E-Commerse\web\fonts\gotham-rounded);
+} */
+.headdiv{
+    /* background-color: linear-gradient(to bottom right,#EAE7DC 0%,#E85A4F 87%); */
+    background: linear-gradient(to bottom right, #d8c3a5 50%, #E85A4F 90%);
+    height:350px;
+    width:100%;
+    border:10px;
+    border-color: black;
+    border-bottom-right-radius: 100%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo {
+    border-radius:100%;
+    width:4vw;
+    height:4vw;
+    padding-top:10px;
+    
+}
+.logo img{
+    border-radius:100%;
+    width:100%;
+    height:100%;
+}
+.head{
+    font-family:gotham rounded;
+    text-align: center;
+    padding-left:200px;
+    font-size:5vw;
+    color:#444458;
+    font-size:auto;
+    position:absolute;
+}
+.container{
+    background: linear-gradient(to top left, #d8c3a5 50%, #E85A4F 90%);
+    border-top-left-radius: 100%;
+    /* border-top-right-radius: -100%; */
+    margin-top:0%;
+    height:350px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.holders{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top:250px; */
+}
+.containers :first-child{
+    margin-top:250px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height:300px;
+    border:100px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product button{
+    border-radius: 3%;
+    border-width: 1px;
+    background-color: #f0e3ba;
+}
+.product div h4{
+    text-align: center;
+    padding-left:50%;
+}
+.product div img{
+    width:100%;
+    height:100%;
+    padding-top:1%;
+}
+body{
+    background-color: #d8c3a5;
+}
