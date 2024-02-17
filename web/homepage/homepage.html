@@ -10,6 +10,8 @@
 </head>
 <body>
     <button class="logo" onclick="openProfilePopup()"><img src="profile.webp" alt="Profile"></button>
+    <button class="orderhistory" onclick="openorderPopup1()">Order History</button>
+    <button class="yourproducts" onclick="openorderPopup2()">Your Products</button>
     <div class="headdiv">
         <h1 class="head">Welcome to your store</h1>
     </div>
@@ -20,6 +22,7 @@
                     <div><img src="image1.jpg"alt=":( error"></div>
                     <h4>Car</h4>
                 </button>
+                
             </div>
             <div class="product">
                 <button>
@@ -28,8 +31,21 @@
                 </button>
             </div>
             
+            <div class="product">
+                <button>
+                    <div><img src="image1.jpg"alt=":( error"></div>
+                    <h4>Car</h4>
+                </button>
+            </div>
         </div>
         <div class="holders">
+            
+            <div class="product">
+                <button>
+                    <div><img src="image1.jpg"alt=":( error"></div>
+                    <h4>Bike</h4>
+                </button>
+            </div>
             <div class="product">
                 <button>
                     <div><img src="image1.jpg"alt=":( error"></div>
@@ -42,42 +58,9 @@
                     <h4>Bike</h4>
                 </button>
             </div>
-            
         </div>
-        <div class="holders">
-            <div class="product">
-                <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Car</h4>
-                </button>
-            </div>
-            <div class="product">
-                <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Bike</h4>
-                </button>
-            </div>
-            
-        </div>
+        
     </div>
-    <!-- <div id="profilePopup" class="popup-container">
-        <div class="popup-content">
-            <button class="close-btn" onclick="closeProfilePopup()">X</button>
-            <button class="back-btn" onclick="closeProfilePopup()">Back</button>
-            <div class="profile-container">
-                <div class="welcome">Hello, User</div>
-                <button class="edit-button" onclick="toggleEdit()">Edit Details</button>
-                <hr>
-                <div class="details">
-                    <p>Name: John Doe</p>
-                    <p>Email: john@example.com</p>
-                    <p>Password: ******** <span class="show-password" onclick="togglePassword()">Show</span></p>
-                    <p>Flat Number: 123</p>
-                </div>
-                <button onclick="logout()">Logout</button>
-            </div>
-        </div>
-    </div> -->
     <div id="profilePopup" class="popup-container">
         <div class="popup-content">
             <!-- <button class="close-btn" onclick="closeProfilePopup()">X</button> -->
@@ -102,7 +85,7 @@
                         <label for="flatNumber">Flat Number:</label>
                         <input type="text" id="flatNumber" name="flatNumber" disabled value="123">
                     </div>
-                    <button type="button" onclick="logout()">Logout</button>
+                    <button class="logout"type="button" onclick="logout()">Logout</button>
                     <button type="submit" id="saveChanges" disabled>Save Changes</button>
                 </div>
             </form>

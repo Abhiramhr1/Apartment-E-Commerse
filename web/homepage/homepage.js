@@ -1,37 +1,14 @@
-// function openProfilePopup() {
-//     // Display the profile popup
-//     document.getElementById('profilePopup').style.display = 'flex';
-// }
 
-// function closeProfilePopup() {
-//     // Close the profile popup
-//     document.getElementById('profilePopup').style.display = 'none';
-// }
-
-// // Placeholder functions
-// function toggleEdit() {
-//     alert('Edit button clicked');
-// }
-
-// function togglePassword() {
-//     alert('Toggle password clicked');
-// }
-
-// function logout() {
-//     alert('Logout button clicked');
-// }
 function openProfilePopup() {
     // Display the profile popup
     const profilePopup = document.getElementById('profilePopup');
     profilePopup.style.display = 'flex';
 }
-
 function closeProfilePopup() {
     // Close the profile popup
     const profilePopup = document.getElementById('profilePopup');
     profilePopup.style.display = 'none';
 }
-
 function enableEditing() {
     const form = document.getElementById('profileForm');
     const inputs = form.getElementsByTagName('input');
@@ -66,3 +43,7 @@ document.getElementById('profileForm').addEventListener('submit', function (even
     // Add logic to handle form submission and update data in the database
     alert('Form submitted! Implement server-side logic for database update.');
 });
+
+
+
+
