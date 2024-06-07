@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homepage.css">
     <script src="homepage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" src="D:\Apartment-E-Commerse\web\fonts\gotham-rounded"> -->
     <title>Document</title>
 </head>
+
 <body>
     <button class="logo" onclick="openProfilePopup()"><img src="profile.webp" alt="Profile"></button>
-    <button class="orderhistory" onclick="openorderPopup1()">Order History</button>
-    <button class="yourproducts" onclick="openorderPopup2()">Your Products</button>
+    <a class="orderhistory" href="orders">Order History</a>
+    <a class="yourproducts" href="add.html">Your Products</a>
     <div class="headdiv">
         <h1 class="head">Welcome to your store</h1>
     </div>
@@ -19,22 +21,28 @@
         <div class="holders">
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
+                <a href="pros?id=car">
+                    <div><img src="car.jpg"alt=":( error"></div>
                     <h4>Car</h4>
-                </button>
+                </a>
+            </button>
                 
             </div>
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
+                    <a href="pros?id=bike">
+                    <div><img src="bike.jpg"alt=":( error"></div>
                     <h4>Bike</h4>
+                </a>
                 </button>
             </div>
             
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Car</h4>
+                    <a href="pros?id=utensils">
+                    <div><img src="p5.jpg"alt=":( error"></div>
+                    <h4>utensils</h4>
+                </a>
                 </button>
             </div>
         </div>
@@ -42,20 +50,27 @@
             
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Bike</h4>
+                    <a href="pros?id=cloths" id="acc">
+                    <div><img src="cloths.jpg"alt=":( error"></div>
+                    <h4>cloths</h4>
+                </a>
                 </button>
             </div>
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Car</h4>
+                    <a href="pros?id=accessories">
+                    <div><img src="accessories.jpg"alt=":( error"></div>
+                    <h4>accessories</h4>
+                </a>
                 </button>
             </div>
             <div class="product">
                 <button>
-                    <div><img src="image1.jpg"alt=":( error"></div>
-                    <h4>Bike</h4>
+                    <a href="pros?id=stationary">
+                    <div><img src="sta.jpg"alt=":( error"></div>
+                    <h4>stationary</h4>
+
+                </a>
                 </button>
             </div>
         </div>
@@ -65,7 +80,7 @@
         <div class="popup-content">
             <!-- <button class="close-btn" onclick="closeProfilePopup()">X</button> -->
             <button class="back-btn" onclick="closeProfilePopup()">Back</button>
-            <form id="profileForm">
+            <form id="profileForm" action = "/edit" method="POST">
                 <div class="profile-container">
                     <!-- Content for the profile page goes here -->
                     <div class="welcome">Hello, User</div>
@@ -81,9 +96,6 @@
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password" disabled value="123456">
                         <span class="show-password" onclick="togglePassword()">Show</span>
-
-                        <label for="flatNumber">Flat Number:</label>
-                        <input type="text" id="flatNumber" name="flatNumber" disabled value="123">
                     </div>
                     <button class="logout"type="button" onclick="logout()">Logout</button>
                     <button type="submit" id="saveChanges" disabled>Save Changes</button>
